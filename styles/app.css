@@ -1,0 +1,126 @@
+/* start*/
+/*styles*/
+::placeholder {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+}
+.formes {
+  width: 100%;
+  height: 900px;
+  background-image: url(../img/82357.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1s ease-in 10ms;
+}
+.wrapper_form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  position: relative;
+  top: -500px;
+}
+.input_name {
+  width: 250px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 415px;
+  margin-bottom: 0px;
+  transition: all 600ms ease-in;
+}
+.input_password {
+  width: 250px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 15px;
+  transition: all 600ms ease-in;
+}
+.btn_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 30px;
+}
+.btn {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  margin-left: 55px;
+  transition: all 500ms ease-in 10ms;
+}
+
+/*animation and efect*/
+
+:focus.input_name,
+:focus.input_password {
+  border-radius: 0px;
+  transition: all 600ms ease-in 10ms;
+  color: white;
+  background-color: black;
+  border-color: blue;
+  font-size: 15px;
+}
+:hover.btn {
+  border-color: blue;
+  color: white;
+  background-color: black;
+  transition: all 500ms ease-in 10ms;
+}
+
+/*dark mode and light mode*/
+
+.change_theme {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100px;
+  height: 30px;
+  position: sticky;
+  left: 100%;
+  border-radius: 50px;
+  transition: all 900ms ease-in 10ms;
+}
+:hover.change_theme {
+  border-color: blue;
+  color: white;
+  background-color: black;
+  transition: all 500ms ease-in 10ms;
+}
+.dark_btn {
+  background-color: black;
+  color: white;
+}
+.dark_input {
+  background-color: black;
+  color: white;
+}
+.dark_other {
+  background-color: black;
+  color: white;
+}
+:hover.dark_btn {
+  border-color: blue;
+  color: black;
+  background-color: white;
+  transition: all 500ms ease-in 10ms;
+}
+:focus.dark_input {
+  border-radius: 0px;
+  transition: all 600ms ease-in 10ms;
+  color: black;
+  background-color: white;
+  border-color: blue;
+  font-size: 15px;
+}
+.background-dark {
+  background-image: url(../img/moonfall-2022-movies-sci-fi-5k-8k-7680x4320-7247.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 600ms ease-in 10ms;
+}
